@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Rutero</title>
 </head>
 <body>
+    <header class="container">
+        <h1 class="titulo">Crea o busca tus rutas</h1>
+    </header>
+    <main  class="container-fluid mainCrear">
+        <!-- opciones de buscar o crear -->
+        <form id="queHacer" class="formInicial">
+            <div class="d-flex justify-content-center" ><p>Ingrese el nombre de la ruta que desea buscar o cree una nueva.</p></div>
+            <div class="d-flex justify-content-around">   
+                <div id="contBuscador" class="contBuscador">
+                    <!-- buscador de rutas -->
+                    <input type="text" id="buscador" list="rutasGuardadas">
+                    <datalist id="rutasGuardadas"></datalist>
+                    <button id="buscar">Buscar</button>
+                    <p id="resultado2" class="displayNone">No se encontro la ruta indicada</p>
+                </div>
+                <button id="crear">Crear una ruta</button>
+            </div> 
+        </form>
+        <!-- resultado de la busqueda -->
+        <div id="resultado" class="divResultado "></div>
+        <!-- formulario para crear ruta -->
+        <div id="formCrear" class="formCrear displayNone">
+            <label class="label">Ingrese el destino de la nueva ruta (tambien sera el nombre).</label>
+            <input id="destino" type="text" class="input">
+            <label class="label">Ingrese el rumbo requerido.</label>
+            <input id="rumbo" type="number" class="input">
+            <label class="label">Ingrese el primer punto de referencia.</label>
+            <input id="p1" type="text" class="input">
+            <label class="label">Ingrese el combustible remanente en el punto 1.</label>
+            <input id="comb1" type="number" class="input">
+            <label class="label">Ingrese el tiempo de vuelo en el punto 1 (Todos los tiempos deben ser tomados con referencia al despegue).</label>
+            <input id="tP1" type="text" class="input">
+            <label class="label">Ingrese su segundo punto de referencia.</label>
+            <input id="p2" type="text" class="input">
+            <label class="label">Ingrese el combustible remanente en el punto 2. </label>
+            <input id="comb2" type="number" class="input">
+            <label class="label">Ingrese el tiempo de vuelo en el punto 2 (Todos los tiempos deben ser tomados con referencia al despegue).</label>
+            <input id="tP2" type="text" class="input">
+            <label class="label">Ingrese el tiempo de vuelo total.</label>
+            <input id="tT" type="text" class="input">
+            <label class="label">Ingrese el combustible remanente en el destino.</label>
+            <input id="combFinal" type="number" class="input">
+            <!-- alert combustible -->
+            <div id="alert" class="displayNone"> <p>EL COMBUSTIBLE ES INSUFICIENTE.</p></div>
+            <!-- alert completar campos -->
+            <div id="alertInput" class="displayNone">Completa todos los campos para continuar.</div>
+            <!-- boton enviar formulario nueva ruta -->
+            <div class="d-flex justify-content-center"><button id="enviar" type="submit" class="boton">Enviar</button></div>
+        </div>
+        <!-- div para mostrar nueva ruta creada -->
+        <div id="resNuevaRuta" class="nuevaRuta"></div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 </html>
