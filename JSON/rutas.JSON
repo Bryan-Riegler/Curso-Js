@@ -1,0 +1,27 @@
+[
+    {
+        "destino": "Azul",
+        "rumbo": "083",
+        "puntoReferencia1": " Hinojo",
+        "combustibleRemanenteP1": "94lts",
+        "tiempoP1": "5 Min", 
+        "puntoReferencia2": "YPF Nieves",
+        "combustibleRemanenteP2": "90lts",
+        "tiempoP2": "20 Min",
+        "tiempoAlDestino": "23 Min",
+        "combustibleRemanenteDestino": "88lts"
+    },
+
+    {
+        "destino": "Bolivar",
+        "rumbo": "326",
+        "puntoReferencia1": " Laguna La Mostaza",
+        "combustibleRemanenteP1": "92lts",
+        "tiempoP1": "10 Min",
+        "puntoReferencia2": "Laguna Blanca Grande",
+        "combustibleRemanenteP2": "86lts",
+        "tiempoP2": "25 Min",
+        "tiempoAlDestino": "50 Min",
+        "combustibleRemanenteDestino": "80lts"
+    }
+]

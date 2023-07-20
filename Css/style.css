@@ -11,6 +11,7 @@ html{
 
 body{
     font-family: "Poppins", sans-serif;
+    background-color:#F5F5F5;
 }
 
 header {
@@ -18,19 +19,17 @@ header {
     align-items: center;
     justify-content: center;
     height: 9vh;
-    
+    background-color: #ffffff;
 }
-
+h1{
+    font-size: 4rem;
+}
 main{
-    height: 88vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:#F5F5F5;
-}
-
-.mainCrear{
-    height: initial;
     display: flex;
     flex-direction: column;
 }
@@ -173,6 +172,6 @@ main{
     transform: scale(1.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-footer{
-    height: 3rem;
+.swal2-popup {
+    font-size: 2rem;
 }
